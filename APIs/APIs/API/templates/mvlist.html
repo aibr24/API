@@ -1,0 +1,13 @@
+
+
+<form action="{% url 'movies-list' %}" method="GET">
+    <input type="text" name='q' placeholder="Search here...">
+    <input type="submit" value="Search">
+</form>
+
+{% for movie in movies.Search %}
+<a href="{% url 'movie-details' movie.imdbID %}">About</a>
+{{movie.Title}}
+{{movie.Year}}
+<hr>
+{% endfor %}

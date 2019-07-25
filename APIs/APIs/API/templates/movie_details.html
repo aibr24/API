@@ -1,0 +1,25 @@
+<img src="{{movie.Poster}}">
+<br>
+{{"Title : "}}{{movie.Title}}
+<br>
+{{"Rating : "}}{{movie.Rated}}
+<br>
+{{"Release Date : "}}{{movie.Released}}
+<br>
+{{"Runtime : "}}{{movie.Runtime}}
+<br>
+{{"Genre : "}}{{movie.Genre}}
+<br>
+{{"Director : "}}{{movie.Director}}
+<br>
+{{"Actors : "}}{{movie.Actors}}
+<br>
+{{"Plot : "}}{{movie.Plot}}
+<br>
+
+
+{%comment%}
+{%for i in movie%}
+{{i}} : {{movie[i]}}
+{% endfor %}
+{%endcomment%}
